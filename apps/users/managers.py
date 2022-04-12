@@ -11,7 +11,6 @@ class CustomUserManager(BaseUserManager):
         except ValidationError:
             raise ValueError(_("You must provide a valid email address"))
 
-
     def create_user(
         self, username, first_name, last_name, email, password, **extra_fields
     ):
@@ -43,7 +42,6 @@ class CustomUserManager(BaseUserManager):
         extra_fields.setdefault("is_superuser", False)
         user.save(using=self._db)
         return user
-
 
     def create_superuser(
         self, username, first_name, last_name, email, password, **extra_fields

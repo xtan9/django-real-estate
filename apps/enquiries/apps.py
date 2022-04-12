@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class RatingsConfig(AppConfig):
+class EnquiriesConfig(AppConfig):
     default_auto_field = "django.db.models.BigAutoField"
-    name = "apps.ratings"
+    name = "apps.enquiries"
